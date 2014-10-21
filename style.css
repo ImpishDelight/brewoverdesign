@@ -1,0 +1,312 @@
+
+
+/*
+navy: #284e5f
+orange: #ef5127;
+beige: #f2ece6;
+*/
+
+/* general */
+body, html {
+	height: 100%;
+	width: 100%;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	background: #f2ece6;
+	color: #000;
+}
+
+p {
+	line-height: 160%;
+}
+
+.red {
+    color: #ef5127;
+}
+
+.call-button {
+	float: left;
+	padding: 15px 50px 15px 50px;
+	background: #ef5127;
+	border: 0;
+	color: #fff;
+	display: inline;
+	letter-spacing: 2px;
+}
+
+.call-button:hover{
+	cursor: pointer; cursor: hand;
+	background: #ef9a20;
+}
+
+#register .call-button {
+	float: none;
+	border: 1px solid #fff;
+	display: inline-block;
+	margin-top: 50px;
+}
+
+.clear {
+	clear: both;
+}
+
+
+/* cover */
+#nav {
+	background: #284e5f;
+	width: 100%;
+	height: 45px;
+	text-align: center;
+	padding: 12px 0 15px 0;
+	position: fixed;
+    z-index: 999;
+}
+
+#nav a, #nav a:active, #nav a:visited {
+	text-decoration: none;
+	color: #fff;
+	padding-left: 20px;
+}
+@media (max-width: 420px) {
+
+#nav a, #nav a:active, #nav a:visited {
+    font-size: 12px;
+}
+
+}
+
+	
+#logo-box {
+	width: 100%;
+	height: 400px;
+	margin: 0 auto;
+    background:rgb(242,236,230);
+	background: transparent\9;
+	background:rgba(242,236,230,0.8);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ccf2ece6,endColorstr=#ccf2ece6);
+	zoom: 1;
+    text-align: right;
+}
+@media (max-width: 420px) {
+    #logo-box {
+        text-align: center !important;
+    }
+
+    .date-register {
+        padding-top: 40px;
+    }
+
+    .date-register .call-button {
+        float: none;
+    }
+}
+
+#logo-box :nth-child(n) {
+	filter: none;
+}
+#logo-box img {
+    height: auto;
+}
+
+#cover {
+	padding-top: 100px;
+	background: #f2ece6 url('assets/PatternSwatch_01.png');
+	height: 80%;
+	text-align: center;
+	font-weight: 600;
+}
+
+#logo-full{
+	padding: 100px 0 60px 0;
+	height: 170px;
+	width: 60%;
+	max-width: 333px;
+	display: block;
+	margin: 0 auto;
+}
+
+@media (max-width: 420px) {
+#logo-full{
+	padding: 0px 0 60px 0;
+}
+#nav a, #nav a:active, #nav a:visited {
+	padding-left: 5px;
+}
+}
+
+.date {
+	font-size: 2em;
+	color: #284e5f;
+}
+
+#register .date {
+	display: block;
+	float: none;
+	padding: 0;
+	color: #fff;
+	font-weight: 600;
+}
+
+
+/* about */
+
+#about {
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+.col {
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+}
+
+.fix {
+	padding: 0;
+	margin: 0;
+}
+
+
+.tag {
+	padding-top: 3%;
+	padding-bottom: 3%;
+	font-size: 1.5em;
+	font-weight: 600;
+	text-align: center;
+}
+
+/* reviewers */
+
+#reviewers {
+	margin: 0 auto;
+	display: block;
+	overflow: auto;
+    text-align: center;
+}
+
+#reviewers-center {
+	margin: 0 auto;
+	overflow: auto;
+    text-align: left;
+}
+
+
+.reviewer-block {
+	width: 300px;
+	float: left;
+	padding: 30px;
+	font-size: 0.8em;
+}
+
+.reviewer-block  strong {
+	font-size: 1.5em;
+}
+
+.reviewer-info {
+	text-align: right;
+}
+
+.reviewer-info span {
+	display: block;
+	padding-bottom: 4px;
+	padding-top: 6px;
+	
+}
+
+.social{
+	height: 40px;
+	width: 40px;
+	padding: 5px;
+	border: 0px;
+}
+
+.profile{
+	height: 100px;
+	width: 100px;
+	border-radius: 100px;
+	border: 3px #ef9a20 solid;
+	float: left;
+}
+
+#team .profile{
+	height: 100px;
+	width: 100px;
+	border-radius: 100px;
+	border: 3px #ef9a20 solid;
+	margin-right: 10px;
+}
+
+#team .reviewer-block {
+	padding: 10px;
+	font-size: 0.8em;
+}
+
+/* register reprise */
+
+#register {
+	width: 100%;
+	background: #ef5127;
+	padding: 80px 0 80px 0;
+	text-align: center;
+	margin-top: 25px;
+	}
+
+/* meet show tell */
+
+#mst {
+	text-align: center;
+	background: url('assets/tempimage.png');
+	margin-bottom: 25px;
+}
+
+#mst img{
+	padding: 50px 0 50px 0;
+    height: auto;
+    width: 100%;
+    max-width: 400px; 
+}
+
+/* contact + sponsors */
+
+#contactspon {
+	background: #284e5f url('assets/PatternSwatch_02b.png');
+	text-align: center;
+	display: block;
+	padding: 100px 0 100px 0;
+}
+
+
+#team {
+	display: block;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin: 0 auto;
+	overflow: auto;
+    text-align: center;
+}
+
+#teambox {
+	margin: 0 auto;
+	overflow: hidden;
+    text-align: left;
+}
+
+#himher {
+    height: auto;
+    width: 300px;
+    padding-bottom: 30px;
+    padding-right: 50px;
+}
+
+@media (max-width: 420px) {
+
+#himher {
+    padding-right: 0px;
+}
+
+}
+
+#dvlb {
+    height: auto;
+    width: 100px;
+}
