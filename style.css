@@ -260,7 +260,7 @@ h3 {
 	margin: 0 auto;
 	overflow: auto;
     text-align: left;
-    width: 440px;
+    width: 900px;
 }
 
 @media (max-width: 420px) {
@@ -276,7 +276,7 @@ h3 {
 
 
 .reviewer-block {
-	width: 300px;
+	width: 270px;
 	float: left;
 	padding: 30px;
 	font-size: 0.8em;
@@ -394,15 +394,30 @@ h3 {
     padding-right: 50px;
 }
 
+#kik {
+    height: auto;
+    width: 200px;
+    padding-bottom: 30px;
+    padding-right: 50px;
+}
+
 @media (max-width: 420px) {
+
+
+#kik {
+    height: auto;
+    width: 150px;
+}
 
 #himher {
     padding-right: 0px;
 }
 
-}
 
 #order {
     height: auto;
     width: 150px;
 }
+
+}
+
