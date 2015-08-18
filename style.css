@@ -263,6 +263,11 @@ h3 {
     width: 900px;
 }
 
+#boathouse {
+    max-height: 52px;
+    width: auto;
+}
+
 @media (max-width: 420px) {
 	#reviewers-center {
 		width: 300px;
@@ -390,7 +395,7 @@ h3 {
 #himher {
     height: auto;
     width: 300px;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
     padding-right: 50px;
 }
 
@@ -417,6 +422,12 @@ h3 {
 #order {
     height: auto;
     width: 150px;
+}
+
+#boathouse {
+    max-height: 72px;
+    width: auto;
+    padding-top: 20px;
 }
 
 }
