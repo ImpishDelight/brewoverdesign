@@ -1,0 +1,114 @@
+doctype html
+html
+    block config
+        include config
+
+    head
+        meta(charset='utf8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
+        meta(name='description', content='description of your site')
+        meta(name='author', content= "author of the site")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title #{metaTitle}
+        != css()
+
+        link(rel="icon" href="img/favicon.png" type="image/x-icon")
+        link(rel="shortcut icon" href="img/favicon.png" type="image/x-icon")
+
+        script(src='js/modernizr-2.6.2.min.js')
+        script(src='js/respond.js')
+
+    body(id= _path.match(/(\w+)\.html$/)[1])
+        include header.jade
+
+        block content
+
+    <!-- Modal Contact -->
+    .modal.fade(id="contact" tabindex="-1" role="dialog" aria-labelledby="contactForm")
+        .modal-dialog(role="document")
+            .modal-content.row
+                .modal-header.col-xs-12
+                    a(type="button" class="close" data-dismiss="modal" aria-label="Close")
+                        span(aria-hidden="true") &times;
+                    h4#myModalLabel.modal-title 
+                        | Have an Inquiry?
+                        br
+                        small Get In Touch With Us
+                .modal-body.col-xs-12
+                    form(name="contact" netlify netlify-honeypot="bot-field")
+                        .row
+                            .col-xs-12.col-sm-6
+                                p
+                                    input(type="text" name="name" placeholder="Name")
+                            .col-xs-12.col-sm-6
+                                p
+                                    input(type="email" name="email" placeholder="Email")
+                            .col-xs-12
+                                p.hidden
+                                    input(name="bot-field")
+                            .col-xs-12
+                                p
+                                    textarea(name="message" placeholder="Message")
+                            .col-xs-12
+                                p
+                                   input.btn.btn-tight.submit(type="submit" value="Send") 
+
+    <!-- Modal Sponsor -->
+    .modal.fade(id="sponsor" tabindex="-1" role="dialog" aria-labelledby="sponsorForm")
+        .modal-dialog(role="document")
+            .modal-content.row
+                .modal-header.col-xs-12
+                    a(type="button" class="close" data-dismiss="modal" aria-label="Close")
+                        span(aria-hidden="true") &times;
+                    h4#myModalLabel.modal-title Thanks for your interest in becoming a sponsor!
+                .modal-body.col-xs-12
+                    form(name="sponsor" netlify netlify-honeypot="bot-field")
+                        .row
+                            .col-xs-12.col-sm-6
+                                p
+                                    input(type="text" name="name" placeholder="Name")
+                            .col-xs-12.col-sm-6
+                                p
+                                    input(type="email" name="email" placeholder="Email")
+                            .col-xs-12
+                                p.hidden
+                                    input(name="bot-field")
+                            .col-xs-12
+                                p
+                                   input.btn.btn-tight.submit(type="submit" value="Send") 
+
+    footer 
+        .wrap.container
+            .row
+                .col-sm-12.col-md-10.col-md-offset-1
+                    .row
+                        .links.col-sm-8
+                            ul
+                                li 
+                                    a(href="https://twitter.com/brewoverdesign" target="_blank")
+                                        i.fa.fa-twitter
+                                li 
+                                    a(href="http://www.meetup.com/The-Kitchener-Waterloo-Brew-Over-Design-Event/" target="_blank") 
+                                        i.fa.fa-ticket
+                                li
+                                    a(href="http://himandher.ca" target="_blank") H•H
+                                //li
+                                //    a(href="#") About
+                                //li
+                                //    a(href="#") Partnership
+                                //li
+                                //    a(href="#") Press
+                    
+                        .colophone.col-sm-4
+                            p Copyright &copy; #{config.year}
+
+    != config_js()
+    script(src='js/main.js')
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-54483917-1', 'auto');
+      ga('send', 'pageview');

@@ -8,14 +8,18 @@ roots_config = require('roots-config')
 moment       = require('moment')
 
 module.exports =
-  ignores: ['readme.md', '**/layout.*', '**/_*', '.gitignore', 'ship.*conf']
+  ignores: ['readme.md', '**/layout.*', '**/_*', '.gitignore', 'ship.*conf, '**/config.*'']
 
   extensions: [
     browserify(files: [
         "assets/js/main.coffee", 
     ], out: 'js/main.js'),
     css_pipeline(files: 'assets/css/*.styl', minify: true, hash: true),
-    roots_config(site: 'http://localhost:1111', year: moment(Date.now()).format('YYYY'))
+    roots_config(
+        site: 'http://brewoverdesign.com', 
+        ticket: 'http://www.meetup.com/The-Kitchener-Waterloo-Brew-Over-Design-Event/events/229418343/',
+        year: moment(Date.now()).format('YYYY')
+    )
   ]
 
   stylus:

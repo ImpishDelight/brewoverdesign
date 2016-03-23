@@ -1,0 +1,52 @@
+extends layout
+
+block config
+    - var metaTitle = "Next Event • Brew Over Design | Kitchener-Waterloo Design Meetup"
+
+block content
+    section.next-event(style="background-image: url('/img/march.jpg');")
+        .wrap.container
+            pre Next Event
+            .when April 5th, 2016
+            .where 7pm &bullet; Open Sesame
+
+            a.btn(href="#{config.ticket}" target="_blank") Register &gt;
+
+    section.event
+        .wrap.container
+            .row
+                .col-sm-12.col-md-10.col-md-offset-1
+                    h2 All design-minded folk are welcome. If you’re a graphic designer, a user-experience architect, a photographer, an animator or somewhere in between; you’re among friends.
+
+                    p 
+                        strong Things to Bring:
+                    ul
+                        li Remember to bring business cards and even your portfolio (if you like), this is a great time to connect and get feedback!
+                        li Bring money for merch and brews – there will definitely be some neat stuff available!
+
+                    br
+                    p 
+                        |Learn more about Open Sesame here: 
+                        a(href="https://www.facebook.com/OpenSesameShop/" target="_blank") www.facebook.com/OpenSesameShop/
+                    br
+                    a.btn.btn-tight(href="#{config.ticket}" target="_blank") Register &gt;
+
+    section.past-events
+        .wrap.container
+            .row
+                .col-sm-12.col-md-10.col-md-offset-1
+                    .row
+                        .col-xs-12
+                            h4 Past Events
+                        .past-event.col-sm-4
+                            .wrap
+                                a(href="http://www.meetup.com/The-Kitchener-Waterloo-Brew-Over-Design-Event/events/203262782/" target="_blank")
+                                    img(src='img/bow_event_sept2014.jpg')
+                        .past-event.col-sm-4
+                            .wrap
+                                a(href="http://www.meetup.com/The-Kitchener-Waterloo-Brew-Over-Design-Event/events/220162563/" target="_blank")
+                                    img(src='img/bow_event_mar2015.jpg')
+                        .past-event.col-sm-4
+                            .wrap
+                                a(href="http://www.meetup.com/The-Kitchener-Waterloo-Brew-Over-Design-Event/events/224720617/" target="_blank")
+                                    img(src='img/bow_event_sept2015.jpg')
