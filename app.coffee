@@ -18,14 +18,14 @@ module.exports =
     css_pipeline(files: 'assets/css/*.styl'),
     roots_config(
         site: 'http://brewoverdesign.com', 
-        ticket: 'http://www.meetup.com/The-Kitchener-Waterloo-Brew-Over-Design-Event/events/229418343/',
+        ticket: 'https://www.meetup.com/The-Kitchener-Waterloo-Brew-Over-Design-Event/events/247051843/',
         year: moment(Date.now()).format('YYYY')
     )
   ]
 
   stylus:
     use: [axis(), rupture(), autoprefixer()]
-    sourcemap: true
+    sourcemap: false
 
   'coffee-script':
     sourcemap: true
